@@ -2,6 +2,10 @@
 #include <vector>
 #include "Span.hpp"
 
+/**
+ * @brief Runs the standard subject scenario.
+ * Adds numbers and prints shortest and longest spans.
+ */
 static void	subjectTest(void)
 {
 	std::cout << "=== Subject test ===" << std::endl;
@@ -19,6 +23,10 @@ static void	subjectTest(void)
 	std::cout << std::endl;
 }
 
+/**
+ * @brief Verifies exception handling paths.
+ * Triggers errors for missing span and full storage.
+ */
 static void	exceptionTest(void)
 {
 	std::cout << "=== Exception test ===" << std::endl;
@@ -49,6 +57,10 @@ static void	exceptionTest(void)
 	std::cout << std::endl;
 }
 
+/**
+ * @brief Tests bulk insertion through iterator range.
+ * Adds a vector range and prints computed spans.
+ */
 static void	rangeTest(void)
 {
 	std::cout << "=== Range test ===" << std::endl;
@@ -68,6 +80,10 @@ static void	rangeTest(void)
 	std::cout << std::endl;
 }
 
+/**
+ * @brief Stress test with many inserted values.
+ * Fills Span with 10000 numbers and prints spans.
+ */
 static void	bigTest(void)
 {
 	std::cout << "=== Big test (10000 numbers) ===" << std::endl;
@@ -87,6 +103,11 @@ static void	bigTest(void)
 	std::cout << std::endl;
 }
 
+/**
+ * @brief Program entry point for ex01 tests.
+ * Executes all Span test scenarios.
+ * @return Exit status code.
+ */
 int	main(void)
 {
 	subjectTest();
