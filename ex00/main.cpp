@@ -3,6 +3,10 @@
 #include <list>
 #include "easyfind.hpp"
 
+/**
+ * @brief Runs a search demo on std::vector.
+ * Tests both successful and failing lookups with easyfind.
+ */
 static void testVector()
 {
 	std::vector<int> v;
@@ -33,6 +37,10 @@ static void testVector()
 	}
 }
 
+/**
+ * @brief Runs a search demo on std::list.
+ * Shows successful lookup with easyfind.
+ */
 static void testList()
 {
 	std::list<int> lst;
@@ -52,6 +60,11 @@ static void testList()
 	}
 }
 
+/**
+ * @brief Program entry point for ex00 tests.
+ * Executes all easyfind test scenarios.
+ * @return Exit status code.
+ */
 int main()
 {
 	testVector();
