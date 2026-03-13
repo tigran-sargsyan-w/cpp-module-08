@@ -2,6 +2,10 @@
 #include <list>
 #include "MutantStack.hpp"
 
+/**
+ * @brief Runs the official subject example.
+ * Demonstrates stack operations and iteration.
+ */
 static void subjectTest(void)
 {
 	std::cout << "=== Subject test ===" << std::endl;
@@ -37,6 +41,10 @@ static void subjectTest(void)
 	(void)s;
 }
 
+/**
+ * @brief Compares MutantStack behavior with std::list.
+ * Prints both sequences after similar operations.
+ */
 static void listComparisonTest(void)
 {
 	std::cout << "\n=== Comparison with std::list ===" << std::endl;
@@ -71,6 +79,10 @@ static void listComparisonTest(void)
 	std::cout << std::endl;
 }
 
+/**
+ * @brief Validates copy constructor and assignment.
+ * Prints original and copied stacks.
+ */
 static void copyTest(void)
 {
 	std::cout << "\n=== Copy test ===" << std::endl;
@@ -100,6 +112,10 @@ static void copyTest(void)
 	std::cout << std::endl;
 }
 
+/**
+ * @brief Demonstrates reverse iterator traversal.
+ * Prints stack content in reverse order.
+ */
 static void reverseIteratorTest(void)
 {
 	std::cout << "\n=== Reverse iterator test ===" << std::endl;
@@ -115,6 +131,11 @@ static void reverseIteratorTest(void)
 	std::cout << std::endl;
 }
 
+/**
+ * @brief Program entry point for ex02 tests.
+ * Executes all MutantStack scenarios.
+ * @return Exit status code.
+ */
 int main(void)
 {
 	subjectTest();
