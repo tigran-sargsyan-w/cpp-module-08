@@ -55,21 +55,25 @@ void	Span::addNumber(int number)
  */
 unsigned int	Span::shortestSpan(void) const
 {
-	std::vector<int>	sortedNumbers;
-	unsigned int		shortest;
-	unsigned int		currentSpan;
-	std::size_t			i;
+	std::vector<int> sortedNumbers;
+	unsigned int shortest;
+	unsigned int currentSpan;
+	long long diff;
+	std::size_t	i;
 
 	if (this->numbers.size() < 2)
 		throw NoSpanFoundException();
 	sortedNumbers = this->numbers;
 	std::sort(sortedNumbers.begin(), sortedNumbers.end());
-	shortest = static_cast<unsigned int>(sortedNumbers[1] - sortedNumbers[0]);
+
+	diff = static_cast<long long>(sortedNumbers[1]) - static_cast<long long>(sortedNumbers[0]);
+	shortest = static_cast<unsigned int>(diff);
+
 	i = 1;
 	while (i < sortedNumbers.size() - 1)
 	{
-		currentSpan = static_cast<unsigned int>(sortedNumbers[i + 1]
-				- sortedNumbers[i]);
+		diff = static_cast<long long>(sortedNumbers[i + 1]) - static_cast<long long>(sortedNumbers[i]);
+		currentSpan = static_cast<unsigned int>(diff);
 		if (currentSpan < shortest)
 			shortest = currentSpan;
 		++i;
