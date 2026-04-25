@@ -90,12 +90,16 @@ unsigned int	Span::longestSpan(void) const
 {
 	int	minValue;
 	int	maxValue;
+	long long diff;
+
 
 	if (this->numbers.size() < 2)
 		throw NoSpanFoundException();
 	minValue = *std::min_element(this->numbers.begin(), this->numbers.end());
 	maxValue = *std::max_element(this->numbers.begin(), this->numbers.end());
-	return static_cast<unsigned int>(maxValue - minValue);
+	
+	diff = static_cast<long long>(maxValue) - static_cast<long long>(minValue);
+	return static_cast<unsigned int>(diff);
 }
 
 /**
