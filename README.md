@@ -1,6 +1,6 @@
 # C++ Module 08 – Templated Containers, Iterators & Algorithms 📚🧠
 
-✅ **Status**: Completed – all mandatory exercises  
+✅ **Status**: Completed – all exercises  
 🏫 **School**: 42 – C++ Modules (Module 08)  
 🏅 **Score**: 100/100
 
