@@ -2,7 +2,7 @@
 
 ✅ **Status**: Completed – all mandatory exercises  
 🏫 **School**: 42 – C++ Modules (Module 08)  
-🏅 **Score**: (score)/100
+🏅 **Score**: 100/100
 
 > *Templated containers, iterators, STL algorithms, ranges, and custom iterable abstractions in C++98.*
 
